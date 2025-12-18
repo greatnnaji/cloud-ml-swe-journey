@@ -9,13 +9,11 @@ def twoSum(nums: list[int], target: int) -> list[int]:
         if difference in index_to_value_map and index_to_value_map[difference] != index:
             return_list.append(index)
             return_list.append(index_to_value_map[difference])
-            break
+            print(return_list)
+            return return_list
     
-    if not return_list:
-        print("The value you are looking for is not contained in list")
-    else:
-        print(return_list)
+    print("The value you are looking for is not contained in list")
 
-    return return_list
+    return []
 
 twoSum([5,5], 10)
