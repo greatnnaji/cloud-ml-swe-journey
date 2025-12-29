@@ -1,0 +1,21 @@
+Machine Learning is the science (or art) of programming computers so they can learn from data
+
+Data Mining: applying ML techniques to dig into large amounts of data that can help discover patterns that were not immediately obvious
+
+Supervised Learning: training set given to the algorithm, include solutions/labels
+    - Regression: predict a target value given a set of features/predictors. ex. car model, mileage,... (features), car price (target/label/output) (continuous quantity)
+
+feature = data type plus its value, feature = data type, both are used interchangeably
+
+logistic regression: used for classification, outputs a value correspoding to the probability of belonging to a given class (e.g 20% chance of being spam)
+    - classification algorithm despite the "regression" portion of name
+        e.g. spam/not spam (discrete quantity)
+
+Unsupervised Learning: training set given to the algorithm, without solutions/labels
+
+dimensionality reduction: goal is to simplify data without losing too much information
+ - a way to do is to merge several correlated features into one feature -> feature extraction
+ - better performance and makes data take up less memory space (good idea to use on training data)
+ 
+
+
