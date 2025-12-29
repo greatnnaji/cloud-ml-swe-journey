@@ -1,0 +1,12 @@
+def twosum (nums: List[int], target: int) -> List[int]:
+	indices = {}  //hashmap
+	for index, num in enumerate (nums):
+		indices[num] = index //key=num, value= index
+	for i, num in enumerate (nums):
+		difference = target - nums[i]
+		j = indices(difference)
+		if difference in indices and j != i:
+			return [i, j]
+	return []
+			
+			
