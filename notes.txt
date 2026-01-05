@@ -1,1 +1,2 @@
 - branch is origin main
+- activate virtual environment with "source venv/bin/activate"

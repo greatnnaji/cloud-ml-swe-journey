@@ -1,0 +1,17 @@
+def group_anagrams(strs -> list[str]) -> list[list[str]]:
+    hashmap = dict()
+    return_list = []
+
+    for str in strs:
+        sorted_chars = sorted(str) //returns ex. ['a', 'c', 't'] (in sorted order)
+        sorted_str = ''.join(sorted_chars) //this joins
+
+        if sorted_str not in hashmap: (same as hashmap.keys() -> although, no need for .keys() as this already checks for membership in keys)
+            hashmap.add[sorted_str] = [str] // adding new list, hence []
+        else:
+            hashmap[sorted_str].append(str)
+    
+    for value in hashmap.values():
+        return_list.append(value)
+    
+    return return_list

@@ -15,5 +15,7 @@ def groupAnagrams(strs: list[str]) -> list[list[str]]:
     print(result)
     return result
 
-strs = [""]
+strs = ["act","pots","tops","cat","stop","hat"]
 groupAnagrams(strs)
+
+# note: .add for sets, .append for lists
