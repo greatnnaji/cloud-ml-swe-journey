@@ -15,7 +15,7 @@ Unsupervised Learning: training set given to the algorithm, without solutions/la
 
 dimensionality reduction: goal is to simplify data without losing too much information
  - a way to do is to merge several correlated features into one feature -> feature extraction
- - better performance and makes data take up less memory space (good idea to use on training data)
+ - better performance and makes data take up less memory space (good idea to use on training data after proper cleaning)
  
  Semisupervised Learning: labeling is time consuming and costly, hence make most of the data unlabeled and the other parts labeled
 
@@ -36,8 +36,8 @@ Instance-based learning vs Model-based learning
 Instance-based learning: system learns by heart and generalizes to new cases by using a similarity measure to compare them to learned examples (or subset of them)
 Model-based learning: build a model from set of examples and use model to make predictions
 
-utility/fitness function: measures how good your model is
-cost function: measures how bad your model is
+Utility/Fitness function: measures how good your model is
+Cost function: measures how bad your model is
 
 training a model means running an algorithm to find the model parameters (choosing model type and specfifying its architecture)
 that will best fit the training data (and hopefully make good predictions on new data) 
