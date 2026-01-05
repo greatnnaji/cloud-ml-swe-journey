@@ -38,6 +38,7 @@ Model-based learning: build a model from set of examples and use model to make p
 
 Utility/Fitness function: measures how good your model is
 Cost function: measures how bad your model is
+- want to minimize cost function -> minimize loss function
 
 training a model means running an algorithm to find the model parameters (choosing model type and specfifying its architecture)
 that will best fit the training data (and hopefully make good predictions on new data) 
