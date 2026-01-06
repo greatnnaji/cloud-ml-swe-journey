@@ -1,0 +1,4 @@
+def containsDuplicate(nums: list[int])-> bool:
+    unique = set(nums)
+    return unique != nums
+
