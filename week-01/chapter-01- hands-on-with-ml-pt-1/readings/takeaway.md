@@ -5,7 +5,7 @@ Data Mining: applying ML techniques to dig into large amounts of data that can h
 Supervised Learning: training set given to the algorithm, include solutions/labels
     - Regression: predict a target value given a set of features/predictors. ex. car model, mileage,... (features), car price (target/label/output) (continuous quantity)
 
-feature = data type plus its value, feature = data type, both are used interchangeably
+feature = data type plus its value, attribute = data type, both are used interchangeably
 
 logistic regression: used for classification, outputs a value correspoding to the probability of belonging to a given class (e.g 20% chance of being spam)
     - classification algorithm despite the "regression" portion of name
@@ -40,11 +40,11 @@ Utility/Fitness function: measures how good your model is
 Cost function: measures how bad your model is
 - want to minimize cost function -> minimize loss function
 
-training a model means running an algorithm to find the model parameters (choosing model type and specfifying its architecture)
-that will best fit the training data (and hopefully make good predictions on new data) 
+training a model means running an algorithm to find the model parameters (choosing model type and specfifying its architecture) that will best fit the training data (and hopefully make good predictions on new data) 
 
 AI vs ML vs DL
 ML is a subset of AI, not all AI is ML
-- ex. of AI not ML are chess engines made with long hardcoded rules
+- ex. of AI not ML are chess engines made with long hardcoded (if-then) rules
 - Deep Learning is a subset of AI, that uses multi-layered aritificial neural networks to automatically learn complex patterns from vast amounts of data
 Note: Multilayered Perceptron (MLP) is a feed forward neural network with multiple neurons, where each layer is fully connected to the next
+- each neuron has an activation value (strength of making it into the next layer)
