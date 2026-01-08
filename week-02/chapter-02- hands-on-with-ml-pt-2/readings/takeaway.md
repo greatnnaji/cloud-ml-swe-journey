@@ -57,13 +57,13 @@ Note: common to use 80% of data for training and 20% of data for testing
 
 When choosing the value of the regularization hyperparameter we could train 100 different models using 100 different hyperparameter values and pick the one with the lowest generalization error, but it gives an even higher generalization error in production
 - This is because running generalization error multiple times on test set causes the model to adapt and produce the best hyperparameters for that set
-Fix this with holdout validation, where we hold out part of the training set (will be our validation set) to evaluate several candidate models and select the best one
-Steps:
+
+Fix this with holdout validation, where we hold out part of the training set (will be our validation set) to evaluate several candidate models and select the best one, the steps are as follows:
 - train multiple models on the reduced training set (i.e train set without validation set) and pick the best one
 - train best model on full training set (including validation set), this gives final model
 - evaluate final model on the test set to get an estimate of the generalization error
 if val set too small -> may end up selecting a suboptimal model instead
 if val set too large -> then training set is too small (analogy: selecting the fastest sprinter to run in a different marathon)
-Solve this by doing repeated cross-validation (using many small validation sets), here each model is evaluated once per validation set after it is trained on the rest of the data, by avergaing out all evaluations we get a more accurate measure of performance, con: takes more time (no. of val sets)
+Solve this val set size problem by doing repeated cross-validation (using many small validation sets), here each model is evaluated once per validation set after it is trained on the rest of the data, by avergaing out all evaluations we get a more accurate measure of performance, con: takes more time (no. of val sets)
 
 
