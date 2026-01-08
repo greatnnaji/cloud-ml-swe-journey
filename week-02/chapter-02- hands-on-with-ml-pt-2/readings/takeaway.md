@@ -66,4 +66,5 @@ if val set too small -> may end up selecting a suboptimal model instead
 if val set too large -> then training set is too small (analogy: selecting the fastest sprinter to run in a different marathon)
 Solve this val set size problem by doing repeated cross-validation (using many small validation sets), here each model is evaluated once per validation set after it is trained on the rest of the data, by avergaing out all evaluations we get a more accurate measure of performance, con: takes more time (no. of val sets)
 
-
+No Free Lunch Theorem: states averaged across all possible problems, every learning algorithm performs equally well (or poorly) i.e. there is no universally superior algorithm that works best for every problem
+- an algorithm will perform well if your problem's structure happens to match the assumptions that the algorithm makes
