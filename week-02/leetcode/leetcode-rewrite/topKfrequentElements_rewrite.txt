@@ -1,0 +1,21 @@
+from collections import Counter
+def topkfrequentelements(nums: list[int], k: int) -> list[int]:
+    count_nums = Counter(nums) # counter output: key('value'), value(occurence)
+    bucket = []
+    # need to sort in O(n) -> bucket sort
+    # need representation index (no. of occurences) to num
+    for _ in range(len(nums) + 1): # indexing starts at O, so need +1
+        bucket.append([])
+    
+    for val, occ in count_nums.items():
+        bucket[occ].append(val)
+
+    return_list = []
+    # add top k to return list
+    for item in range(len(bucket) - 1, 0, -1):
+        for val in bucket[item]:
+            return_list.append(val)
+            if (len(return_list) == k):
+                return return_list
+    
+    return return_list
