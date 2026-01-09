@@ -37,7 +37,7 @@ possible solutions include:
 Note: We want to find the balance between fitting the training data well and keeping the model simple enough so it will generalize well
 
 Constraining a model to make it simpler and reduce the risk of overfitting is called regularization
-- The amoount of regularization to apply during learning can be controlled by a hyperparameter
+- The amount of regularization to apply during learning can be controlled by a hyperparameter
 - A hyperparameter is a parameter of the learning algorithm (not of the model)
     - if large: no overfitting but less likely to find a good solution, makes model very simple and less complex
 
