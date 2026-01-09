@@ -4,6 +4,7 @@ Data Mining: applying ML techniques to dig into large amounts of data that can h
 
 Supervised Learning: training set given to the algorithm, include solutions/labels
     - Regression: predict a target value given a set of features/predictors. ex. car model, mileage,... (features), car price (target/label/output) (continuous quantity)
+        - e.g. linear regression
 
 feature = data type plus its value, attribute = data type, both are used interchangeably
 
