@@ -1,9 +1,9 @@
 def encode(strs: list[str]) -> str:
-    result_str = ':'.join(strs)
+    result_str = ':;'.join(strs)
     return result_str
 
 def decode(s: str) -> list[str]:
-    result_list = s.split(':')
+    result_list = s.split(':;')
     return result_list
 
 dummy_input = [""]
