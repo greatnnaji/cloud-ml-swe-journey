@@ -25,13 +25,25 @@ def encode(strs: list[str]) -> str:
     return result_str
 
 def decode(s: str) -> list[str]:
+    result_list = []
+    i = 0
+    while i < len(s):
+        j = i
+        new_str = ""
+        while s[j] != "#":
+            j += 1
+        
+        length = int(s[i:j])
+        new_str = s[j+1:j+1+length]
+        result_list.append(new_str)
+        i = j + 1 + length
 
-    return 
+    return result_list
 
 
 
-dummy_input = ["Hello","World"]
+dummy_input = ["HelloGreatest","World"]
 encoded = encode(dummy_input)
 print(f"Encoded: {encoded}")
-# decoded = decode(encoded)
-# print(f"Decoded: {decoded}")
+decoded = decode(encoded)
+print(f"Decoded: {decoded}")
