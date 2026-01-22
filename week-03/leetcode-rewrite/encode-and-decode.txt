@@ -1,0 +1,20 @@
+def encode(List[str]: strs) -> str: 
+    encoded_str = ""
+    for string in strs
+        encoded_str += len(string) + "#" + string
+    return encoded_str
+
+def decode(str: s) -> List[str]:
+    result_list = []
+    i = 0
+    while i < len(s):
+        j = i
+        new_str = ""
+        while s[j] != "#"
+            j += 1
+        length = int(s[i:j]) # j is not inclusive
+        new_str = s[j+1: j+1+length]
+        i = j+1+length # note: not += because that would include i's old value which is of no use to us
+        result_list.append(new_str)
+    
+    return result_list
