@@ -15,7 +15,7 @@ def topKfrequentElements(nums: list[int], k: int) -> list[int]:
     #     print(index, value)
 
     result = []
-    for i in range(len(bucket) - 1, 0, -1): # start len(bucket)-1, stop at 0, count down -1 (step), stop = 0 same as while stop > 0
+    for i in range(len(bucket) - 1, 0, -1): # start len(bucket)-1, stop at 0, count down -1 (step), stop = 0 same as while i > 0
         for num in bucket[i]:
             result.append(num)
             if len(result) == k:
