@@ -14,7 +14,7 @@ def productExceptSelf(nums: list[int]) -> list[int]:
 
     print(new_nums)
     
-    return []
+    return new_nums
 
 # example test case
 nums = [1,2,3,4]
