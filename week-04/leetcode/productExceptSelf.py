@@ -11,9 +11,11 @@ def productExceptSelf(nums: list[int]) -> list[int]:
     right = []
     right.append(1)
 
+    # get everything to the left of index i -> max product to left of i
     for i, value in enumerate(nums[:-1]):
         left.append(value * left[-1])
 
+    # get everything to the right of index i -> max product to right of i
     for i,value in reversed(list(enumerate(nums[1:]))): # reversed to go from right to left excluding last element
         right.insert(0, value * right[0])
     
