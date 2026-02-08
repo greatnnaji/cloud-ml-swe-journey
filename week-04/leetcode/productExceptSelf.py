@@ -19,10 +19,7 @@ def productExceptSelf(nums: list[int]) -> list[int]:
     for i,value in reversed(list(enumerate(nums[1:]))): # reversed to go from right to left excluding last element
         right.insert(0, value * right[0])
     
-    arr1 = np.array(left)
-    arr2 = np.array(right)
-
-    result_arr = np.multiply(arr1,arr2)
+    result_arr = [a * b for a, b in zip(left, right)]
 
     print(result_arr)
 
