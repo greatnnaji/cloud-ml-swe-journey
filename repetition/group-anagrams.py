@@ -14,3 +14,8 @@ def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
     print(output_arr)
 
     return output_arr
+
+# answer at the end why using Counter from collections doesn't work
+# A: it wouldn't work with this question because we would need to
+# differentiate by both key and value i.e. string and no. of occurences for that string,
+# which is a more complicated solution than the above
